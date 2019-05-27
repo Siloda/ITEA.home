@@ -1,0 +1,11 @@
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\bin\Debug\netcoreapp2.1\ITEAhome.deps.json
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\bin\Debug\netcoreapp2.1\ITEAhome.runtimeconfig.json
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\bin\Debug\netcoreapp2.1\ITEAhome.runtimeconfig.dev.json
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\bin\Debug\netcoreapp2.1\ITEAhome.dll
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\bin\Debug\netcoreapp2.1\ITEAhome.pdb
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.csprojAssemblyReference.cache
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.csproj.CoreCompileInputs.cache
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.AssemblyInfoInputs.cache
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.AssemblyInfo.cs
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.dll
+C:\Users\Silod\source\repos\ITEAhome\ITEAhome\obj\Debug\netcoreapp2.1\ITEAhome.pdb
