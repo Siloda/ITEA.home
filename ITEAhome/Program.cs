@@ -14,17 +14,17 @@ namespace ITEAhome
                                               
                 case 500:
                     {
-                        Console.WriteLine("you discount: 7% " + " Total Pay: " + (totalPriсe * 0.93));
+                        Console.WriteLine("you discount: 7% " + " Total Pay: " + (totalPriсe * 0.93 + "$"));
                         break;
                     }
                 case 400:
                     {
-                        Console.WriteLine("you discount: 5% " + " Total Pay: " + (totalPriсe * 0.95));
+                        Console.WriteLine("you discount: 5% " + " Total Pay: " + (totalPriсe * 0.95 + "$"));
                         break;
                     }
                 case 300:
                     {
-                        Console.WriteLine("you discount: 3% " + " Total Pay: " + (totalPriсe * 0.93));
+                        Console.WriteLine("you discount: 3% " + " Total Pay: " + (totalPriсe * 0.93 + "$"));
                         break;
                     }
                 case 100:
@@ -35,12 +35,44 @@ namespace ITEAhome
                     }
             }
 
+            int count = 3;
+
+            while (true)
+            {
+                Random rnd = new Random();
+                int value = rnd.Next(0, 100);
+                Console.WriteLine(" ");
+                Console.WriteLine("Guess and enter number, from 0 to 100");
+                int num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < value)
+                {
+                    count--;
+                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.     " + "тест рандомного числа: " + value);
+                }
+                if (num > value)
+                {
+                    count--;
+                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.     " + "тест рандомного числа: " + value);
+                }
+
+                if (num == value)
+                {
+                    Console.WriteLine("Bingo!!!      " + "тест рандомного числа: " + value);
+                    break;
+                }
+
+                if (count==0)
+                {
+                    
+                    Console.WriteLine("Goodbye");
+                    break;
+
+                }
 
 
 
-
-                           
-
+            }
         }
     }
 } 
