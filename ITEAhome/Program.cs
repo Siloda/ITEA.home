@@ -6,11 +6,11 @@ namespace ITEAhome
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Helo! Enter you total price:");
+           Console.WriteLine("Helo! Enter you total price:");
             int totalPriсe = Convert.ToInt32(Console.ReadLine());
             
             switch (totalPriсe)
-                {
+            { 
                                               
                 case 500:
                     {
@@ -34,10 +34,10 @@ namespace ITEAhome
                         break;
                     }
             }
+               
+               int count = 5;
 
-            int count = 3;
-
-            while (true)
+             while (true)
             {
                 Random rnd = new Random();
                 int value = rnd.Next(0, 100);
@@ -48,17 +48,17 @@ namespace ITEAhome
                 if (num < value)
                 {
                     count--;
-                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.     " + "тест рандомного числа: " + value);
+                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.");
                 }
                 if (num > value)
                 {
                     count--;
-                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.     " + "тест рандомного числа: " + value);
+                    Console.WriteLine("Wrong!!! you have: " + count + " assmits.");
                 }
 
                 if (num == value)
                 {
-                    Console.WriteLine("Bingo!!!      " + "тест рандомного числа: " + value);
+                    Console.WriteLine("Bingo!!!");
                     break;
                 }
 
@@ -73,6 +73,92 @@ namespace ITEAhome
 
 
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 } 
