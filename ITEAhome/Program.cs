@@ -7,7 +7,7 @@ namespace ITEAhome
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Helo! Enter you total price:");
+            /* Console.WriteLine("Helo! Enter you total price:");
 
             float i = Convert.ToInt32(Console.ReadLine());
 
@@ -28,142 +28,163 @@ namespace ITEAhome
                         Console.WriteLine("you discount 3% " + " Total pay: " + n * 0.97);
                         break;
                     }
-                case float n when (n < 300 ):
-                    { 
+                case float n when (n < 300):
+                    {
                         Console.WriteLine("you discount 0%" + " Total pay: " + n);
-                    
+
                         break;
                     }
 
-                    
-
-
-                   /* int count = 5;
-                     Random rnd = new Random();
-                     int value = rnd.Next(0, 101);
-                     Console.WriteLine(" ");
-                     Console.WriteLine("Guess and enter number, from 0 to 100");
-
-                     while (true)
-                     {
-
-                         int num = Convert.ToInt32(Console.ReadLine());
-
-                         if (num < value)
-                         {
-                             count--;
-                             Console.WriteLine("Wrong!!! My number is Bigger! You have: " + count + " assmits." );
-                         }
-                         if (num > value)
-                         {
-                             count--;
-                             Console.WriteLine("Wrong!!! My number is Less! You have: " + count + " assmits.");
-                         }
-
-                         if (num == value)
-                         {
-                             Console.WriteLine("Bingo!!! YOU WIN");
-                             break;
-                         }
-
-                         if (count==0)
-                         {
-
-                             Console.WriteLine("YOU LUSSE!!! Goodbye");
-                             break;
-                         }
-
-
-
-                     }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
             }
+
+
+
+
+
+            float count = 5;
+
+            Random rnd = new Random();
+            int value = rnd.Next(0, 1000000);
+            Console.WriteLine(" ");
+            Console.WriteLine("Guess and enter number, from 0 to 100");
+
+            while (true)
+            {
+
+                        int num = Convert.ToInt32(Console.ReadLine());
+
+                        if (num < value)
+                        {
+                            count--;
+                            Console.WriteLine("Wrong!!! My number is Bigger! You have: " + count + " assmits.");
+                        }
+                        if (num > value)
+                        {
+                            count--;
+                            Console.WriteLine("Wrong!!! My number is Less! You have: " + count + " assmits.");
+                        }
+
+                        if (num == value)
+                        {
+                            Console.WriteLine("Bingo!!! YOU WIN");
+                            break;
+                        }
+
+                        if (count == 0)
+                        {
+
+                            Console.WriteLine("YOU LUSSE!!! Goodbye");
+                            break;
+
+                        }
+            }
+            */
+            /* Random rnd2 = new Random();
+             int value2 = rnd2.Next(0, 1000000);
+             Console.WriteLine(" ");
+             Console.WriteLine("");
+             int num = Convert.ToInt32(Console.ReadLine());
+             for (int i=0;i<1000000;i++)
+               {                
+                 if (value2 % 3 == 3)
+                 {
+                     value2 += 1;              
+
+                 }
+
+
+             }
+
+             Console.WriteLine( i+ " " + value2);
+         }*/
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
