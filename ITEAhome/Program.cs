@@ -100,10 +100,24 @@ namespace ITEAhome
 
 
 
+            Console.WriteLine("Преатствую! Введите ваше Ф.И.О. через пробел:"); //ПреБедствие и Ф.А.Кю.
+
+            string inputName = Console.ReadLine(); // Именины                               
+            int firstIndex = inputName.IndexOf(" "); // первое индексное значение поиска имени
+            int secondIndex = inputName.LastIndexOf(" "); //второе индексное значение  для поиска отчества
+            string firstWord = inputName.ToUpper().Substring(0, 1); // для корректного отображения заглавной буквы фамилии по условию
+            string firstName = inputName.ToLower().Substring(1, firstIndex); // для корректного отображения остальной части фамилии по условию 
+            string secondName = inputName.ToUpper().Substring(firstIndex, 2) + ".";// корректное отображение данных в имени согласно условию
+            string thirdName = inputName.ToUpper().Substring(secondIndex, 2) + ".";// корректное отображение данных в фамилии согласно условию
+            Console.WriteLine();
+            Console.WriteLine(" " + firstWord + firstName + secondName + thirdName); //вывод решения 
 
 
 
-           
+
+
+
+
 
 
 
