@@ -2,7 +2,165 @@
 
 namespace ITEAhome
 {
+    class Circle
+    {
+        private string circleColor = "Red";
+        private string circleName = "CirclePit";
+        private double circlePerim;
+        private double circleArea;
+        private double circleRadius;
+
+
+        public void getCircleRadius()
+        {
+            Console.WriteLine("You have chosen a circle! ");
+            Console.WriteLine();
+            Console.WriteLine("Enter radius: ");
+
+            circleRadius = Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void getCirclePerim()
+        {
+            circlePerim = 2 * Math.PI * circleRadius;
+
+        }
+        public void getCircleArea()
+        {
+            circleArea = Math.PI * (circleRadius * circleRadius);
+
+        }
+        public void getCircleInfo()
+        {
+            Console.WriteLine("Circle Color: " + circleColor + "\n" + "Circle Name: " + circleName + "\n" + "Circle Area: " + circleArea + "\n" + "Circle Perim: " + circlePerim + "\n" + "Goodbye!");
+        }
+    }
+    class Square
+    {
+        private string squareColor = "Black";
+        private string squareName = "Kazimir";
+        private double squarePerim;
+        private double squareArea;
+        private double squareSide;
+
+
+        public void getSquareSide()
+        {
+            Console.WriteLine("You have chosen a square! ");
+            Console.WriteLine();
+            Console.WriteLine("Enter side length: ");
+            squareSide = Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void getSquarePerim()
+        {
+            squarePerim = squareSide * 4;
+
+        }
+        public void getSquareArea()
+        {
+            squareArea = squareSide * squareSide;
+
+        }
+        public void getSquareInfo()
+        {
+            Console.WriteLine("Square Color: " + squareColor + "\n" + "Square Name: " + squareName + "\n" + "Square Area: " + squareArea + "\n" + "Square Perim: " + squarePerim + "\n" + "Goodbye!");
+        }
+    }
+    class Triangle
+
+    {
+        private string triangleColor = "Blue";
+        private string triangleName = "Bermud";
+        private double trianglePerim;
+        private double triangleArea;
+        private double triangleSide1;
+        private double triangleSide2;
+        private double triangleSide3;
+
+
+        public void getTriangleSide()
+        {
+            Console.WriteLine("You have chosen a triangle! ");
+            Console.WriteLine();
+            Console.WriteLine("Enter length side A : ");
+            triangleSide1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter length side B : ");
+            triangleSide2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter length side C : ");
+            triangleSide3 = Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void getTrianglePerim()
+
+        {
+
+            trianglePerim = triangleSide1 + triangleSide2 + triangleSide3;
+
+        }
+        public void getTriangleArea()
+        {
+            double p = 0.5 * (triangleSide1 + triangleSide2 + triangleSide3);
+
+            triangleArea = Math.Sqrt(p * (p - triangleSide1) * (p - triangleSide2) * (p - triangleSide3));
+
+
+        }
+        public void getTriangleInfo()
+        {
+            Console.WriteLine("Triangle Color: " + triangleColor + "\n" + "Triangle Name: " + triangleName + "\n" + "Triangle Area: " + triangleArea + "\n" + "Triangle Perim: " + trianglePerim + "\n" + "Goodbye!");
+        }
+    }
+
     class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello guest!\n" + "You can choose three items or exit: \n" + " 1 - circle\n " + "2 - square\n " + "3 - tringle\n " + "0 - exit\n");
+            string selection = Console.ReadLine();
+
+            switch (selection)
+            {
+                case "1":
+
+                    Circle circle = new Circle();
+                    circle.getCircleRadius();
+                    circle.getCirclePerim();
+                    circle.getCircleArea();
+                    circle.getCircleInfo();
+                    break;
+                case "2":
+
+                    Square square = new Square();
+                    square.getSquareSide();
+                    square.getSquarePerim();
+                    square.getSquareArea();
+                    square.getSquareInfo();
+                    break;
+                case "3":
+
+                    Triangle triangle = new Triangle();
+                    triangle.getTriangleSide();
+                    triangle.getTrianglePerim();
+                    triangle.getTriangleArea();
+                    triangle.getTriangleInfo();
+                    break;
+                case "0":
+
+                    Console.WriteLine("Goodbye");
+                    break;
+
+                default:
+                    Console.WriteLine("You clicked an unknown letter");
+                    break;
+            }
+
+
+
+        }
+    }
+}
+   /* class Program
     {
         static void Main(string[] args)
         {
@@ -96,7 +254,7 @@ namespace ITEAhome
              }
 
              Console.WriteLine( i+ " " + value2);
-         }*/
+         }
 
 
 
@@ -112,93 +270,9 @@ namespace ITEAhome
             Console.WriteLine();
             Console.WriteLine(" " + firstWord + firstName + secondName + thirdName); //вывод решения 
 
+            */
+                                                                              
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-    }
-}
+ 
